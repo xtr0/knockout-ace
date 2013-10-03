@@ -1,3 +1,8 @@
+'use strict'
+
+var ko = require('knockout');
+var ace = require('brace');
+
 // Based on Knockout Bindings for TinyMCE
 // https://github.com/SteveSanderson/knockout/wiki/Bindings---tinyMCE
 // Initial version by Ryan Niemeyer. Updated by Scott Messinger, Frederik Raabye, Thomas Hallock, Drew Freyling, and Shane Carr.
