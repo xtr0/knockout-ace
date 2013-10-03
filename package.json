@@ -1,6 +1,6 @@
 {
   "name": "knockout-ace",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Knockout bindings for the ACE embeddable code editor (using brace)",
   "keywords": [],
   "peerDependencies": {
