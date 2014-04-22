@@ -2,7 +2,7 @@
 
 Knockout bindings for the ACE embeddable code editor (using brace)
 
-[![NPM version](https://badge.fury.io/js/knockout-ace.png)](http://badge.fury.io/js/knockout-ace)
+[![NPM version](https://img.shields.io/npm/v/knockout-ace.svg)](http://badge.fury.io/js/knockout-ace)
 
 ## Installation
 
