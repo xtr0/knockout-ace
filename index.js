@@ -29,6 +29,16 @@ var ace = require('brace');
       if ( options.mode ) editor.getSession().setMode("ace/mode/" + options.mode);
       if ( options.readOnly ) editor.setReadOnly(true);
 
+      var aceOpts = {};
+      Object.keys(options).forEach(function (k) {
+        if (["theme", "mode", "readOnly"].indexOf(k) == -1) {
+          aceOpts[k] = options[k];
+        }
+      });
+      if (Object.keys(aceOpts).length) {
+        editor.setOptions(aceOpts);
+      }
+
       editor.setValue(value);
       editor.gotoLine( 0 );
 
@@ -63,7 +73,7 @@ var ace = require('brace');
       }
     }
   };
-  
+
   ko.aceEditors = {
     resizeAll: function(){
       for (var id in instances_by_id) {
