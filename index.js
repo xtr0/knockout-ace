@@ -40,6 +40,10 @@ var ace = require('brace');
         editor.setOptions(aceOpts);
       }
 
+      if (allBindingsAccessor().aceInit) {
+        allBindingsAccessor().aceInit(editor);
+      }
+
       editor.setValue(value);
       editor.gotoLine( 0 );
 
