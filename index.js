@@ -24,6 +24,7 @@ var ace = require('brace');
       }
 
       var editor = ace.edit( element.id );
+      editor.$blockScrolling = Infinity;
 
       if ( options.theme ) editor.setTheme("ace/theme/" + options.theme);
       if ( options.mode ) editor.getSession().setMode("ace/mode/" + options.mode);
