@@ -44,7 +44,8 @@ var ace = require('brace');
         allBindingsAccessor().aceInit(editor);
       }
 
-      editor.setValue(value);
+//      editor.setValue(value);
+      editor.getSession().setValue(value);
       editor.gotoLine( 0 );
 
       editor.getSession().on("change",function(delta){
